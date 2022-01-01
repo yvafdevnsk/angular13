@@ -7,3 +7,4 @@
 ## プロジェクト
 
 - [window.location.searchとURLSearchParamsを使ってQuery Stringを取得する](https://github.com/yvafdevnsk/angular13/tree/main/angular13-query-string-location-search)
+- [Angular Routerを使ってQuery Stringを取得する](https://github.com/yvafdevnsk/angular13/tree/main/angular13-query-string-angular-router)
