@@ -1,27 +1,36 @@
-# Angular13Primeng13DropdownOverlaypanelWidth
+# Angular13とPrimeNG13でDropdownのoverlay panelをitemの幅に沿って広げる
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.2.
+- node v16.13.2 (npm v8.1.2)
+- Angular CLI 13.2.2
+- Google Chrome 98
+- PrimeNG 13.1.0
+- PrimeIcons 5.0.0
 
-## Development server
+## サンプルコード
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+src/app/app.component.html
+```
+<p-dropdown [options]="items" [style]="{'width':'200px'}"></p-dropdown>
+```
 
-## Code scaffolding
+src/app/app.component.ts
+```
+export class AppComponent {
+  items: any[];
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+  constructor() {
+    this.items = [
+      {label:"あいうえお", value:"1"},
+      {label:"あいうえおかきくけこ", value:"2"},
+      {label:"あいうえおかきくけこさしすせそ", value:"3"},
+      {label:"あいうえおかきくけこさしすせそたちつてと", value:"4"},
+    ];
+  }
+}
+```
 
-## Build
+## 実行結果
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+PrimeNGのバージョン13ではDropdownのoverlay panelはitemの幅に沿って広がるので何もしなくてよい。
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+![kankore11](https://user-images.githubusercontent.com/10959860/154802313-862cc4c1-3d6f-49a5-b5cf-c02c36948e12.png)
