@@ -8,3 +8,4 @@
 
 - [window.location.searchとURLSearchParamsを使ってQuery Stringを取得する](https://github.com/yvafdevnsk/angular13/tree/main/angular13-query-string-location-search)
 - [Angular Routerを使ってQuery Stringを取得する](https://github.com/yvafdevnsk/angular13/tree/main/angular13-query-string-angular-router)
+- [Angular13とPrimeNG13でDropdownのoverlay panelをitemの幅に沿って広げる](https://github.com/yvafdevnsk/angular13/tree/main/angular13-primeng13-dropdown-overlaypanel-width)
